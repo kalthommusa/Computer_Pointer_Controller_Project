@@ -101,6 +101,8 @@ python downloader.py --name "gaze-estimation-adas-0002" -o "C:\Users\toshiba\Des
 
 ## Demo
 
+![](image/pose_angles_output.png)
+
 To run the project on CPU:
 
 1- First you have to clone this repository -----> [https://github.com/kalthommusa/Computer_Pointer_Controller_Project.git](https://github.com/kalthommusa/Computer_Pointer_Controller_Project) 
@@ -154,7 +156,7 @@ cd ..
 
 3- Now you are ready to execute the application, run the following command:
 
-![](image/pose_angles_output.png)
+
 
 ```
 python src\app.py -fcm models\intel\face-detection-adas-binary-0001\FP32-INT1\face-detection-adas-binary-0001.xml -flm models\intel\landmarks-regression-retail-0009\FP16\landmarks-regression-retail-0009.xml -hpm models\intel\head-pose-estimation-adas-0001\FP16\head-pose-estimation-adas-0001.xml -gzm models\intel\gaze-estimation-adas-0002\FP16\gaze-estimation-adas-0002.xml -d CPU -inv bin\demo.mp4 -flags ffcm fflm fhpm fgzm
@@ -165,59 +167,6 @@ python src\app.py -fcm models\intel\face-detection-adas-binary-0001\FP32-INT1\fa
 
 ![](image/project_st1.png)
 ![](image/project_st2.png)
-
-|
-|--.Instructions.md.swp
-|--README.md
-|--requirements.txt
-|--bin
-| |--.gitkeep
-| |--demo.mp4
-|
-|--image
-| |--FP16.png
-| |--FP16-INT8.png
-| |--FP32.png
-| |--openvino_initialzation.png
-| |--pipeline.png
-| |--pose_angles_output.png
-| |--project_st1.png
-| |--project_st2.png
-|
-|--models
-| |--intel
-|   |--face-detection-adas-binary-0001
-|   | |--FP32-INT1
-|   |--gaze-estimation-adas-0002
-|   | |--FP16
-|   | |--FP16-INT8
-|   | |--FP32
-|   |--head-pose-estimation-adas-0001
-|   | |--FP16
-|   | |--FP16-INT8
-|   | |--FP32
-|   |--landmarks-regression-retail-0009
-|   | |--FP16
-|   | |--FP16-INT8
-|   | |--FP32
-|
-|--src
-| |--__pycache__
-| |--app.py
-| |--face_detection.py
-| |--facial_landmarks_detection.py
-| |--gaze_estimation.py
-| |--head_pose_estimation.py
-| |--input_feeder.py
-| |--mouse_controller.py
-|
-|--venv
-| |--Include
-| |--Lib
-| |--Scripts
-| |--share
-| |--pyvenv.cfg.cfg
-| 
 
 
 ## Documentation
@@ -245,13 +194,19 @@ The Benchmark performance were run on different models precisions (all models ex
 The results were as shown in the images below ----->
 
 * FP16 :
+
 ![](image/FP16.png)
 
+
 * FP16-INT8 :
+
 ![](image/FP16-INT8.png)
 
+
 * FP32 :
+
 ![](image/FP32.png)
+
 
 
 ## Results
